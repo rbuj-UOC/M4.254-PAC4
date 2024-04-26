@@ -1,0 +1,12 @@
+<div class="article-item" [class]="article.isOnSale ? 'article-item sale' : ''">
+    <img [src]="article.imageUrl">
+    <div class="container">
+        <div class="name">{{article.name}}</div>
+        <div class="prize">{{article.price}} €</div>
+        <div class="quantity">
+            <div><button [disabled]="article.quantityInCart == 0" (click)="decrementInCart()">-</button></div>
+            <div>{{article.quantityInCart}}</div>
+            <div><button (click)="incrementInCart()">+</button></div>
+        </div>
+    </div>
+</div>
