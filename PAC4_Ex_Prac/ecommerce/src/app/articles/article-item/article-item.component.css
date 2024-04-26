@@ -2,6 +2,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     max-width: 200px;
+    margin: 10px;
 }
 
 .article-item:hover {
@@ -27,12 +28,8 @@
     justify-content: center;
 }
 
-.article-item.on-sale {
+.article-item.sale {
     background-color: #C3C3E5;
-}
-
-.prize.on-sale {
-    color: black;
 }
 
 .prize.not-on-sale {
