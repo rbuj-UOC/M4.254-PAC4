@@ -8,6 +8,7 @@ import { Article } from "../../model/article";
 })
 export class ArticleItemComponent implements OnInit {
   public article: Article;
+  public articleClasses;
 
   constructor() { }
 
@@ -16,8 +17,12 @@ export class ArticleItemComponent implements OnInit {
       name: 'Aerosmith: Permanent Vacation',
       imageUrl: 'assets/records/permanent-vacation.webp',
       price: 31.99,
-      isOnSale: true,
+      isOnSale: false,
       quantityInCart: 0
+    };
+    this.articleClasses = {
+      "on-sale": this.article.isOnSale,
+      "not-on-sale": !this.article.isOnSale
     };
   }
 

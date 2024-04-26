@@ -27,6 +27,14 @@
     justify-content: center;
 }
 
-.article-item.sale {
+.article-item.on-sale {
     background-color: #C3C3E5;
+}
+
+.prize.on-sale {
+    color: black;
+}
+
+.prize.not-on-sale {
+    color: gray;
 }
