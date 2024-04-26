@@ -5,3 +5,4 @@ Robert Buj Gelonch, rbuj
 - Exercici 4
 - Exercici 5
 - Exercici 6
+- Exercici 7 (1/2)
