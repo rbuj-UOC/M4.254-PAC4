@@ -7,16 +7,9 @@ import { ArticleItemComponent } from './articles/article-item/article-item.compo
 import { ArticleListComponent } from './articles/article-list/article-list.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ArticleItemComponent,
-    ArticleListComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, ArticleItemComponent, ArticleListComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
