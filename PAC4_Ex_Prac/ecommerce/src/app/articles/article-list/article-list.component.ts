@@ -4,6 +4,8 @@ import { ArticleQuantityChange } from '../../model/article-quantity-change';
 
 @Component({
   selector: 'app-article-list',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
+  standalone: false,
   template: `
     <div class="article-list">
       <app-article-item
@@ -23,14 +25,12 @@ import { ArticleQuantityChange } from '../../model/article-quantity-change';
 export class ArticleListComponent implements OnInit {
   public articles: Article[];
 
-  constructor() {}
-
   ngOnInit() {
     this.articles = [
       {
         id: 1,
         name: 'Aerosmith: Permanent Vacation',
-        imageUrl: 'assets/records/permanent-vacation.webp',
+        imageUrl: '/records/permanent-vacation.webp',
         price: 31.99,
         isOnSale: true,
         quantityInCart: 0
@@ -38,7 +38,7 @@ export class ArticleListComponent implements OnInit {
       {
         id: 2,
         name: 'The Beatles: Sgt. Pepper`s Lonely Hearts Club Band',
-        imageUrl: 'assets/records/beatles.webp',
+        imageUrl: '/records/beatles.webp',
         price: 36.99,
         isOnSale: false,
         quantityInCart: 0
@@ -46,7 +46,7 @@ export class ArticleListComponent implements OnInit {
       {
         id: 3,
         name: 'Pulp Fiction',
-        imageUrl: 'assets/records/pulp-fiction.webp',
+        imageUrl: '/records/pulp-fiction.webp',
         price: 25.99,
         isOnSale: true,
         quantityInCart: 0
