@@ -31,7 +31,7 @@ export class ArticleListComponent implements OnInit {
       {
         id: 1,
         name: 'Aerosmith: Permanent Vacation',
-        imageUrl: '/records/permanent-vacation.webp',
+        imageUrl: './records/permanent-vacation.webp',
         price: 31.99,
         isOnSale: true,
         quantityInCart: 0
@@ -39,7 +39,7 @@ export class ArticleListComponent implements OnInit {
       {
         id: 2,
         name: 'The Beatles: Sgt. Pepper`s Lonely Hearts Club Band',
-        imageUrl: '/records/beatles.webp',
+        imageUrl: './records/beatles.webp',
         price: 36.99,
         isOnSale: false,
         quantityInCart: 0
@@ -47,7 +47,7 @@ export class ArticleListComponent implements OnInit {
       {
         id: 3,
         name: 'Pulp Fiction',
-        imageUrl: '/records/pulp-fiction.webp',
+        imageUrl: './records/pulp-fiction.webp',
         price: 25.99,
         isOnSale: true,
         quantityInCart: 0
