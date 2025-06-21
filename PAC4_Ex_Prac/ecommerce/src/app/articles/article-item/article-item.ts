@@ -10,6 +10,7 @@ import { ArticleQuantityChange } from '../../model/article-quantity-change';
 
 @Component({
   selector: 'app-article-item',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './article-item.html',

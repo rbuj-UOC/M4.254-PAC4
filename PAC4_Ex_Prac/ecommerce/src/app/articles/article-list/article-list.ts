@@ -4,6 +4,7 @@ import { ArticleQuantityChange } from '../../model/article-quantity-change';
 
 @Component({
   selector: 'app-article-list',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   template: `
     <div class="article-list">
