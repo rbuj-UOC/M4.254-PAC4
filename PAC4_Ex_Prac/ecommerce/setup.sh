@@ -7,7 +7,7 @@ npx @angular/cli@latest new ${PROJECT_NAME} --no-strict --standalone=false --sty
 # install the packages
 cd ${PROJECT_NAME}
 ng add @angular-eslint/schematics --defaults  --skip-confirmation
-npm install --save-dev prettier prettier-eslint eslint-config-prettier eslint-plugin-prettier
+npm install --save-dev prettier prettier-eslint eslint-config-prettier eslint-plugin-prettier @awmottaz/prettier-plugin-void-html
 
 # overwrite / create config files
 cat << EOF > eslint.config.js
@@ -67,10 +67,12 @@ cat << EOF > .prettierrc.json
     {
       "files": "*.html",
       "options": {
-        "parser": "angular"
+        "parser": "angular",
+        "bracketSameLine": true
       }
     }
-  ]
+  ],
+  "plugins": ["@awmottaz/prettier-plugin-void-html"]
 }
 EOF
 
