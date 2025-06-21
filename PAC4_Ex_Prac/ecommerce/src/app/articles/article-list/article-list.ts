@@ -8,7 +8,7 @@ import { ArticleQuantityChange } from '../../model/article-quantity-change';
   standalone: false,
   template: `
     <div class="article-list">
-      @for (articleObj of articles; track articleObj) {
+      @for (articleObj of articles; track articleObj.id) {
         <app-article-item
           [article]="articleObj"
           (quantityChange)="onQuantityChange($event)"
