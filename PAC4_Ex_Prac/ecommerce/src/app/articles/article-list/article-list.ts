@@ -4,7 +4,6 @@ import { ArticleQuantityChange } from '../../model/article-quantity-change';
 
 @Component({
   selector: 'app-article-list',
-  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   template: `
     <div class="article-list">
@@ -23,7 +22,7 @@ import { ArticleQuantityChange } from '../../model/article-quantity-change';
     }
   `
 })
-export class ArticleListComponent implements OnInit {
+export class ArticleList implements OnInit {
   public articles: Article[];
 
   ngOnInit() {
