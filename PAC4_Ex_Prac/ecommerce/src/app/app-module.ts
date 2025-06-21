@@ -7,18 +7,9 @@ import { ArticleList } from './articles/article-list/article-list';
 import { ArticleItem } from './articles/article-item/article-item';
 
 @NgModule({
-  declarations: [
-    App,
-    ArticleList,
-    ArticleItem
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-  ],
-  providers: [
-    provideBrowserGlobalErrorListeners()
-  ],
+  declarations: [App, ArticleList, ArticleItem],
+  imports: [BrowserModule, AppRoutingModule],
+  providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App]
 })
-export class AppModule { }
+export class AppModule {}

@@ -14,7 +14,7 @@ import { ArticleQuantityChange } from '../../model/article-quantity-change';
         ></app-article-item>
       }
     </div>
-    `,
+  `,
   styles: `
     .article-list {
       display: flex;
