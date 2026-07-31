@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { App } from './app';
 import { AppRoutingModule } from './app-routing-module';
-import { ArticleList } from './articles/article-list/article-list';
 import { ArticleItem } from './articles/article-item/article-item';
+import { ArticleList } from './articles/article-list/article-list';
 
 @NgModule({
   declarations: [App, ArticleList, ArticleItem],
