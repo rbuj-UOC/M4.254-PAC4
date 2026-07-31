@@ -3,7 +3,7 @@ PROJECT_NAME=ecommerce
 
 # create the projecte
 # npx @angular/cli@latest new ${PROJECT_NAME} --no-strict --standalone=false --style=css --ssr=no --skip-tests --package-manager="npm"
-npx @angular/cli@20 new ${PROJECT_NAME} --no-strict --standalone=false --style=css --ssr=no --skip-tests --package-manager="npm" --ai-config="none" --routing --zoneless=false
+npx @angular/cli@21 new ${PROJECT_NAME} --no-strict --standalone=false --style=css --ssr=no --skip-tests --package-manager="npm" --ai-config="none" --routing --zoneless=false
 
 # install the packages
 cd ${PROJECT_NAME}
